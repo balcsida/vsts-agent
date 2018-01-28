@@ -1,7 +1,10 @@
 {
 	"id": "agent",
 	"image": "microsoft/vsts-agent:ubuntu-16.04-standard",
-    "cpu": 8,
-    "memory": 16384,
-    "zeroDowntime": false
+	"env": {
+		"ANT_OPTS": "-Xmx16g"
+	},
+	"cpu": 8,
+	"memory": 17408,
+	"zeroDowntime": false
 }
